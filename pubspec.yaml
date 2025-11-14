@@ -36,6 +36,9 @@ dependencies:
   cupertino_icons: ^1.0.8
   firebase_messaging: ^16.0.4
   firebase_core: ^4.2.1
+  flutter_local_notifications: ^19.5.0
+  shared_preferences: ^2.0.15
+  share_plus: ^12.0.1
 
 dev_dependencies:
   flutter_test:
@@ -58,6 +61,34 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  # Images used for quote backgrounds. Place images named by type in
+  # `assets/images/`, for example (prefer JPG):
+  # - assets/images/regular.jpg
+  # - assets/images/important.jpg
+  # - assets/images/motivational.jpg
+  # - assets/images/wisdom.jpg
+  assets:
+    - assets/images/
+
+  # Custom fonts (optional): add your font files under `assets/fonts/`
+  # and uncomment & edit the section below to enable a custom font family
+  # Fonts for each quote type. Place the actual .ttf files under
+  # `assets/fonts/` using the file names shown below. If you don't add
+  # the font files the app will fall back to the system font.
+  fonts:
+    - family: RegularQuotes
+      fonts:
+        - asset: assets/fonts/regular.ttf
+    - family: ImportantQuotes
+      fonts:
+        - asset: assets/fonts/important.ttf
+    - family: MotivationalQuotes
+      fonts:
+        - asset: assets/fonts/motivational.ttf
+    - family: WisdomQuotes
+      fonts:
+        - asset: assets/fonts/wisdom.ttf
 
   # To add assets to your application, add an assets section, like this:
   # assets:
